@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hub de Recursos Globales · Ingeniería Informática UA</title>
+  <meta name="description" content="Hub centralizado de recursos, herramientas y materiales compartidos de la carrera de Ingeniería Informática en la UA." />
+  <link rel="stylesheet" href="css/recursos-styles.css" />
+</head>
+<body>
+  <!-- Barra de navegación superior -->
+  <header class="topbar">
+    <div class="topbar__brand">
+      <img src="img/eps-logo.png" alt="Logo EPS UA" class="topbar__logo" />
+      <div class="topbar__titles">
+        <span class="topbar__eyebrow">Ingeniería Informática · UA</span>
+        <span class="topbar__name">Repositorio recursos</span>
+      </div>
+    </div>
+
+    <button
+      id="theme-toggle"
+      class="theme-toggle"
+      type="button"
+      aria-label="Cambiar tema claro/oscuro"
+    >
+      <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6" />
+        <path d="M12 2.5v2.4M12 19.1v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+      </svg>
+      <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20 14.2A8 8 0 1 1 9.8 4a6.4 6.4 0 0 0 10.2 10.2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </header>
+
+  <main class="page">
+    <!-- Encabezado de sección -->
+    <section class="hero">
+      <span class="hero__tag">// hub de recursos globales</span>
+      <h1 class="hero__title">Todo lo que necesitas, en un solo sitio.</h1>
+      <p class="hero__subtitle">
+        Enlaces externos, herramientas y materiales compartidos de la carrera,
+        centralizados y siempre a mano.
+      </p>
+    </section>
+
+    <!-- Accesos directos de alta prioridad -->
+    <section class="featured" aria-label="Accesos directos destacados">
+      <a
+        class="feature-card feature-card--tests"
+        data-modal="tests"
+        href="#"
+        aria-haspopup="dialog"
+      >
+        <span class="feature-card__glow" aria-hidden="true"></span>
+        <span class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M8 3.5h8a2 2 0 0 1 2 2V20a1 1 0 0 1-1.4.9l-2.1-1-2.1 1a1 1 0 0 1-.8 0l-2.1-1-2.1 1A1 1 0 0 1 6 20V5.5a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+            <path d="M9.5 11.5l1.7 1.7 3.3-3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span class="feature-card__body">
+          <span class="feature-card__label">Tests</span>
+          <span class="feature-card__desc">Exámenes, cuestionarios y tests de la carrera</span>
+        </span>
+        <span class="feature-card__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </a>
+
+      <a
+        class="feature-card feature-card--mega"
+        data-modal="mega"
+        href="#"
+        aria-haspopup="dialog"
+      >
+        <span class="feature-card__glow" aria-hidden="true"></span>
+        <span class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <defs>
+              <linearGradient id="megaGrad" x1="4" y1="6" x2="20" y2="19" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#ff9a4d" />
+                <stop offset="1" stop-color="#ff3d3d" />
+              </linearGradient>
+            </defs>
+            <path d="M7 18.4a4 4 0 0 1-.55-7.96 5.2 5.2 0 0 1 10.02-1.62A3.9 3.9 0 0 1 17.3 18.4H7z" fill="url(#megaGrad)" fill-opacity="0.16" stroke="url(#megaGrad)" stroke-width="1.6" stroke-linejoin="round" />
+            <path d="M12 15.7v-4.4M12 11.3l-1.9 1.9M12 11.3l1.9 1.9" stroke="url(#megaGrad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span class="feature-card__body">
+          <span class="feature-card__label">Mega</span>
+          <span class="feature-card__desc">Apuntes y libros compartidos, por curso</span>
+        </span>
+        <span class="feature-card__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </a>
+
+      <a
+        class="feature-card feature-card--esquemas"
+        data-link="esquemas"
+        href="#"
+      >
+        <span class="feature-card__glow" aria-hidden="true"></span>
+        <span class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="9" y="3.5" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.6" />
+            <rect x="3.5" y="16.5" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.6" />
+            <rect x="14.5" y="16.5" width="6" height="4" rx="1" stroke="currentColor" stroke-width="1.6" />
+            <path d="M12 7.5v4.5M12 12h-5.5v4.5M12 12h5.5v4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span class="feature-card__body">
+          <span class="feature-card__label">Esquemas</span>
+          <span class="feature-card__desc">Resúmenes y esquemas de asignaturas</span>
+        </span>
+        <span class="feature-card__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M6 12h12M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </a>
+    </section>
+
+    <!-- Enlaces secundarios categorizados -->
+    <section class="secondary" aria-label="Recursos secundarios">
+      <div class="secondary__head">
+        <h2 class="secondary__title">Más recursos</h2>
+        <span class="secondary__hint">Próximamente</span>
+      </div>
+
+      <div class="grid" id="secondary-grid">
+        <!-- Las tarjetas se generan desde recursos-script.js a partir de la config -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Ingeniería Informática · Universidad de Alicante</span>
+    <span class="footer__dot" aria-hidden="true">·</span>
+    <span>Repositorio recursos</span>
+  </footer>
+
+  <!-- Modal: colecciones de Tests -->
+  <div class="modal modal--tests" id="tests-modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="tests-modal-title">
+      <header class="modal__head">
+        <div class="modal__title-wrap">
+          <span class="modal__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M8 3.5h8a2 2 0 0 1 2 2V20a1 1 0 0 1-1.4.9l-2.1-1-2.1 1a1 1 0 0 1-.8 0l-2.1-1-2.1 1A1 1 0 0 1 6 20V5.5a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+              <path d="M9.5 11.5l1.7 1.7 3.3-3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <div>
+            <h2 class="modal__title" id="tests-modal-title">Tests · Exámenes y cuestionarios</h2>
+            <p class="modal__subtitle">Elige una colección para practicar.</p>
+          </div>
+        </div>
+        <button class="modal__close" type="button" data-close aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </header>
+      <ul class="modal__list" id="tests-list">
+        <!-- Se genera desde recursos-script.js a partir de TEST_RESOURCES -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal: carpetas de Mega por curso -->
+  <div class="modal modal--mega" id="mega-modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="mega-modal-title">
+      <header class="modal__head">
+        <div class="modal__title-wrap">
+          <span class="modal__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M7 18.4a4 4 0 0 1-.55-7.96 5.2 5.2 0 0 1 10.02-1.62A3.9 3.9 0 0 1 17.3 18.4H7z" fill="url(#megaGrad)" fill-opacity="0.16" stroke="url(#megaGrad)" stroke-width="1.6" stroke-linejoin="round" />
+              <path d="M12 15.7v-4.4M12 11.3l-1.9 1.9M12 11.3l1.9 1.9" stroke="url(#megaGrad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <div>
+            <h2 class="modal__title" id="mega-modal-title">Mega · Apuntes por curso</h2>
+            <p class="modal__subtitle">Elige un curso para abrir su carpeta compartida.</p>
+          </div>
+        </div>
+        <button class="modal__close" type="button" data-close aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </header>
+      <ul class="modal__list" id="mega-year-list">
+        <!-- Se genera desde recursos-script.js a partir de MEGA_FOLDERS -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/recursos-script.js"></script>
+</body>
+</html>
