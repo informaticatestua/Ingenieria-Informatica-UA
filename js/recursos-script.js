@@ -40,32 +40,11 @@ const MEGA_FOLDERS = [
 --------------------------------------------------------------------- */
 const CATEGORIES = [
   {
-    id: 'software',
-    title: 'Software Útil',
-    desc: 'IDEs, compiladores y herramientas',
+    id: 'pisos',
+    title: 'Pisos compartidos',
+    desc: 'Alojamiento y compañeros de piso',
     url: null,
-    icon: 'terminal',
-  },
-  {
-    id: 'ua',
-    title: 'Enlaces UA',
-    desc: 'UACloud, Campus Virtual, EPS',
-    url: null,
-    icon: 'building',
-  },
-  {
-    id: 'chat',
-    title: 'Discord / Telegram',
-    desc: 'Comunidades y canales de la carrera',
-    url: null,
-    icon: 'chat',
-  },
-  {
-    id: 'biblio',
-    title: 'Bibliografía',
-    desc: 'Libros de referencia y manuales',
-    url: null,
-    icon: 'book',
+    icon: 'home',
   },
 ];
 
@@ -81,6 +60,8 @@ const ICONS = {
     '<path d="M4 5.5h16a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9l-4 3.5V15.5H4a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 10h8M8 12.5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>',
   book:
     '<path d="M5 4.5h9a2 2 0 0 1 2 2V20a1.5 1.5 0 0 0-1.5-1.5H5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 6.5h2.5a1 1 0 0 1 1 1V20a1.5 1.5 0 0 0-1.5-1.5H16" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>',
+  home:
+    '<path d="M4 10.5 12 4l8 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 9.5V20h12V9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20v-4.5h4V20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>',
 };
 
 /* =====================================================================
